@@ -67,7 +67,7 @@ while True:
           x_high = (x + 1) * STEP - EPS
           
           cell = puzzle[y_low : y_high, x_low : x_high]
-          cv2.imwrite('Cell' + str(y) + str(x) + ".png", cell)
+          # cv2.imwrite('Cell' + str(y) + str(x) + ".png", cell)
           cell = cell.reshape(1, 28, 28, 1)
           
           if cell.sum() > 7000:
